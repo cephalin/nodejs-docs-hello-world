@@ -10,6 +10,6 @@
     },
     "scripts": { 
         "start": "node index.js",
-        "start_azure_debug": "if [[ ${APPSVC_TUNNEL_PORT} != \"\" ]]; then node --inspect=0.0.0.0:$APPSVC_TUNNEL_PORT index.js; else npm run start; fi"
+        "start_azure_debug": "node --inspect=0.0.0.0:$APPSVC_TUNNEL_PORT index.js"
     }
 }
